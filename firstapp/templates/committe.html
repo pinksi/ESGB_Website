@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+  <br>
+  <h1>ESGB 2016 Committe Members</h1>
+  <br>
+  {% for instance in post %}
+    <div class="col-sm-4">
+        <img src="{{ instance.upload_image.url }}" height="250"  width="200" padding="5"  /><br>
+        <div class="descrip">
+          Name : {{instance.name}}<br>
+          Post : {{instance.post}}<br>
+          Batch : {{instance.dept}}<br>
+        </div>
+    </div>
+  {% endfor %}
+    
+
+{% endblock%}
+

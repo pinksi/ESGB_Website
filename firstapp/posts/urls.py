@@ -1,18 +1,19 @@
 from django.conf.urls import url
 from django.contrib import admin
 
-from .views import (
-	home,
-	aboutus,
-	members,
-	login,
-	)
+from .import views
+#(
+#	home,
+#	aboutus,
+#	committe,
+#	login,
+#	)
 
 urlpatterns = [
-	url(r'^$', home),
-    url(r'^aboutus/$', aboutus),
-    url(r'^members/$', members),
-    url(r'^login/$', login),
+	url(r'^$', views.home, name="home"),
+    url(r'^aboutus/$', views.aboutus, name="aboutus"),
+    url(r'^committe/$', views.committe,name="committe"),
+    url(r'^login/$', views.login, name="login"),
     
     #url(r'^posts/$', "<appname>.views.<function_name>"),  
 ]
