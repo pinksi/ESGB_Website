@@ -16,12 +16,16 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.contrib.staticfiles.urls import static,staticfiles_urlpatterns
+from django.conf import settings
 
 from posts import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^posts/', include("posts.urls")),
+    url(r'^posts/', include("posts.urls")),	
     url(r'^$', include("posts.urls")),
     #url(r'^posts/$', "<appname>.views.<fnction_name>"),  
 ]
+urlpatterns += staticfiles_urlpatterns()
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

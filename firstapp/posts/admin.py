@@ -11,5 +11,4 @@ from .models import Post
 #	search_fields = ["title", "content"]
 #	class Meta:
 #		model = Post
-
 admin.site.register(Post)#, PostModelAdmin)

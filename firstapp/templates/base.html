@@ -29,20 +29,20 @@
   <!--header starts-->  
 <div class="bddy">
 <div class="header" >
-          <div class="search-form">
+	<div class="site-name">
+		<style >
+</style>       
+    	<!--img src="{% static 'img/name.png' %}"class="img-responsive left-block " height= "100" width="600"-->
+	<h1>ENGINEERING STUDENTS' GROUP OF BHAKTAPUR</h1>
+        </div> 
+        <div class="search-form">
                 <form  method="GET" action="" >
-                  <input type="text" placeholder="authors , book names ,etc" size="40" name="query" value="{{request.GET.query}}" >
+                  <input type="text" placeholder="Search..." size="30" name="query" value="{{request.GET.query}}" >
                   <!--input type="submit" value=""-->
                   <button class="btn btn-info" type="submit">SEARCH</button>                               
-              </form> 
-               
+              </form>                
         
-</div>
-  <div class="site-name">       
-    <!--img src="{% static 'img/name.png' %}"class="img-responsive left-block " height= "100" width="600"-->
-              <h1>ENGINEERING STUDENTS' GROUP OF BHAKTAPUR</h1>
-        </div>  
-        
+</div>         
 </div>
   <div class="clear"></div> 
 <!--header ends-->
@@ -68,8 +68,8 @@
           
         </div>
         <div class="col-sm-4">
-          Telephone: +abc 1234 <br> PO Box: 7333<br> <br> Bhaktapur, Nepal<br> esgb.edu.np <br> 
-          <br> About Us</a>  
+          Telephone: +abc 1234 <br> PO Box: 7333<br> <br> Bhaktapur, Nepal<br><a href="http://esgb.edu.np">http://esgb.edu.np</a> <br> 
+          <br> <a href="{% url 'aboutus' %}">About Us</a>  
         </div>
         
         <div class="col-sm-4">

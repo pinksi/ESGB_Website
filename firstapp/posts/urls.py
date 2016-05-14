@@ -11,9 +11,10 @@ from .import views
 
 urlpatterns = [
 	url(r'^$', views.home, name="home"),
-    url(r'^aboutus/$', views.aboutus, name="aboutus"),
-    url(r'^committe/$', views.committe,name="committe"),
-    url(r'^login/$', views.login, name="login"),
+    url(r'^aboutus/', views.aboutus, name="aboutus"),
+    url(r'^committe/', views.committe,name="committe"),
+    url(r'^login/', views.login, name="login"),
     
     #url(r'^posts/$', "<appname>.views.<function_name>"),  
-]
+] 
+

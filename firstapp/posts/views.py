@@ -13,7 +13,7 @@ def home(request):
 
 def aboutus(request):
 	context = {
-		"title" : "aboutus"
+		"aboutus" : "About Us"
 	}
 	return render(request, "aboutus.html",context)
 
@@ -32,7 +32,7 @@ def login(request):
 		}
 	else:
 		context = {
-			"title" : "not authenticated"
+			"title" : "Not authenticated"
 		}
 	return render(request, "index.html", context)
 
