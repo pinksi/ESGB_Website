@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+  <br>
+  <h1><center>ESGB 2016 Executive Members</center></h1>
+  <br>
+  <div class="row">
+    {% for instance in query1 %}
+       <div class="col-sm-4">
+        <img class="img-responsive center-block" src="{{ instance.upload_image.url }}" height="250"  width="250" padding="5"  /><br>
+          <div class="descrip">
+          <center>
+            Name : {{instance.name}}<br>
+            Post : {{instance.post}}<br>
+            Batch : {{instance.dept}}<br>
+          </div><br>
+          </center>
+      </div>
+    {% endfor %}<br>
+  </div>
+
+<br>
+  <h1><center>ESGB 2016 Limelight Members</center></h1>
+  <br>
+<div class="row">
+    {% for instance in query2 %}
+       <div class="col-sm-4">
+        <img class="img-responsive center-block" src="{{ instance.upload_image.url }}" height="250"  width="250" padding="5"  /><br>
+          <div class="descrip">
+          <center>
+            Name : {{instance.name}}<br>
+            Post : {{instance.post}}<br>
+            Batch : {{instance.dept}}<br>
+          </div><br>
+          </center>
+      </div>
+    {% endfor %}<br>
+  </div>
+
+
+{% endblock%}
+
