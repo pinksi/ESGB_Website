@@ -1,1 +1,1 @@
-web: gunicorn esgbsite1.wsgi
+web: gunicorn firstapp.wsgi
