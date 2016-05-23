@@ -17,7 +17,7 @@ class Post(models.Model):
 	name = models.CharField(max_length=100,blank=False)
 	post = models.CharField(max_length=100, blank=False)
 	dept = models.CharField(max_length=100, blank=False)
-	#upload_image = models.ImageField(upload_to='uploads/', blank = True)
+	upload_image = models.FileField(upload_to='uploads/', blank = True)
 
 	def __str__(self):
 		return self.name
