@@ -141,7 +141,7 @@ MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),"static_part","media_root")
 
 
 import dj_database_url
-DATABASES['default'] = dj_database_url.config()
+DATABASES['default'] = dj_database_url.config(default='sqlite://db/sqlite3.db')
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
