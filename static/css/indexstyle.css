@@ -1,10 +1,9 @@
 body{
-	
+	background-color: #f6ddcc;
 }
 
 .header{
 	background-color:#ffffff;
-	background-image: url("navbar1.jpg");
 	height:150px;	
 	font-family: "lobster";
 		
@@ -14,7 +13,7 @@ body{
 	
 }
 .header .sitename{
-	width: 140px;
+	width: 240px;
 
 }
 .header .search-form{
@@ -25,24 +24,30 @@ body{
 }
 
 
-.navbar{
-	background-color:#000000;
+.container-fluid{
+	background-color: #ffffff ;
+	height:150px;
 }
 .carousel{
-height: 300px;
+	width: 100%;
+
+}
+.carousel-inner .item-active .img{
+	min-height: 500px;
+	max-width: 100% !important;
 
 }
 .container{
 	margin-left:40px;
 }
 h1{
-	color:#ec7d17;
-	font-size:60px;
-	font-family:"Verdana";
+	color:#E9967A;
+	font-family:"lobster two";
 }
 h2,h3{
-	color:#756f6f;
-	font-family:"sans-serif";
+	color:#E9967A;
+	font-family: "lobster two";
+	font-size: 40px;
 }
 p{
 	padding:0px 10px 0px 10px;	
