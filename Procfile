@@ -1,5 +1,4 @@
-web: gunicorn firstapp.app --preload 
-
+web: gunicorn firstapp.app
 
 
 
