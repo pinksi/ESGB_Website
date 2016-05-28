@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+	{% load staticfiles %}
+	<div class="head">
+		<center>
+			<h1 style="color: #2e86c1  ; font-family:Verdana"><b>ESGB Events</b></h1>
+			<!--p style="color:#e73ca4; font-family:Verdana">"We think....We engineer"</p-->
+			<p style="color:   #2e86c1 ; font-family:Verdana">============================================================================</p>
+		</center>
+	</div><br>
+	{% for instance in blog %}
+    	<h2><center>{{instance.title}}</center></h2>
+    	<img class="img-responsive center-block" src="{{ instance.upload_photos.url }}" height="250"  width="750" padding="5"  /><br>
+		<p>{{instance.content}}</p>
+		Posted On :<p>{{instance.timestamp}}</p>
+	{% endfor%}
+
+
+<div class="pagination">
+    <span class="step-links">
+        {% if blog.has_previous %}
+            <a href="?page={{ blog.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ blog.number }} of {{ blog.paginator.num_pages }}.
+        </span>
+
+        {% if blog.has_next %}
+            <a href="?page={{ contacts.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>
+
+{% endblock%}

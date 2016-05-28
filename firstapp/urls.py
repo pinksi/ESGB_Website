@@ -29,7 +29,7 @@ urlpatterns = [
     url(r'^aboutus/', 'posts.views.aboutus', name="aboutus"),
     url(r'^committe/', 'posts.views.committe',name="committe"),
     url(r'^activity/', 'posts.views.activity', name="activity"),
-    url(r'^login/', 'posts.views.login', name="login"),
+    url(r'^blog/', 'blog.views.blogpost', name="blog"),
 
     #url(r'^$', include("posts.urls")),
     #url(r'^posts/$', "<appname>.views.<fnction_name>"),  

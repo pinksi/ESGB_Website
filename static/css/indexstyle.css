@@ -85,6 +85,9 @@ p{
 			margin-left: 10px;
 			}
 			
+		.footer-nav .img{
+			background-color:#434040; 
+		}
 			.footer-nav ul,
 			.footer p {
 				text-align: center;

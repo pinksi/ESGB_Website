@@ -56,16 +56,6 @@ def activity(request):
 		}
 	return render(request, "activity.html", context)
 
-def login(request):
-	if request.user.is_authenticated():
-		context = {
-			"title" : "My user"
-		}
-	else:
-		context = {
-			"title" : "not authenticated"
-		}
-	return render(request, "index.html", context)
 
 #def post_delete(request):
 #	return HttpResponse("<h1>delete</h1>")

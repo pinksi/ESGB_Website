@@ -1,13 +1,20 @@
 {% extends 'base.html' %}
 {% block content %}
+{% load staticfiles %}
 	<br>
+	<h1><center>Our Gallery</center></h1>
 	<div class="row">
 		<div class="col-sm-4">
-			<h1>Our Gallery</h1>
-  			
-  			<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
-			This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
-			</p>
+			<img class="img-responsive center-block" src="{% static 'img/lakurihiking.jpg' %}" /><br>
+  				<p><center>Hiking to Lakuribhanjyang</center></p>
+  		</div>
+  		<div class="col-sm-4">
+  			<img class="img-responsive center-block" src="{% static 'img/eqrelief.jpg' %}" /><br>
+  				<p><center>Earthquake Relief Camp</center></p>
+  		</div>
+  		<div class="col-sm-4">
+  			<img class="img-responsive center-block" src="{% static 'img/deusi072.jpg' %}" /><br>
+  				<p><center>Deusi Bhailo</center></p>
   		
 		</div>
   		
