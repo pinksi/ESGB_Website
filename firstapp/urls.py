@@ -30,7 +30,7 @@ urlpatterns = [
     url(r'^committe/', 'posts.views.committe',name="committe"),
     url(r'^activity/', 'posts.views.activity', name="activity"),
     url(r'^blog/', 'blog.views.blogpost', name="blog"),
-
+    url(r'^gallery/',include('gallery.urls')),
     #url(r'^$', include("posts.urls")),
     #url(r'^posts/$', "<appname>.views.<fnction_name>"),  
 ]

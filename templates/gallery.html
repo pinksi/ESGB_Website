@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+  <br>
+  <h1><center>{{ album.album_name }}</center></h1>
+  <br>
+  <div class="row">    
+    {% for photo in album.photo_set.all %}
+      <div class="col-sm-4" >
+        <img class="img-thumbnail" class="img-responsive" src="{{ photo.image.url }}" height="320"  width="320" padding="2"  /><br>
+         <div class="descrip">
+          <center>
+          </div><br>
+          </center>
+      </div>
+    {% endfor %} <br>   
+  </div>
+{% endblock %}
+
