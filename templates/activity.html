@@ -1,23 +1,32 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load staticfiles %}
-	<br>
-	<h1><center>Our Gallery</center></h1>
-	<div class="row">
-		<div class="col-sm-4">
-			<img class="img-responsive center-block" src="{% static 'img/lakurihiking.jpg' %}" /><br>
-  				<p><center>Hiking to Lakuribhanjyang</center></p>
-  		</div>
-  		<div class="col-sm-4">
-  			<img class="img-responsive center-block" src="{% static 'img/eqrelief.jpg' %}" /><br>
-  				<p><center>Earthquake Relief Camp</center></p>
-  		</div>
-  		<div class="col-sm-4">
-  			<img class="img-responsive center-block" src="{% static 'img/deusi072.jpg' %}" /><br>
-  				<p><center>Deusi Bhailo</center></p>
-  		
-		</div>
-  		
-	</div>
+
+<br>
+<h1><b><center>Our Gallery</center></b></h1>
+<br>
+<div class="row">
+  <div class="col-sm-4">
+      <a href="{% url 'gallery' 1 %}" class="thumbnail" class="img-responsive center-block">          
+        <img src="{% static 'img/lakurihiking.jpg' %}" style="width:400px;height:250px"><br>
+        <center><p>Hiking to Lakuribhanjyang</p></center>  
+      </a>
+  </div>
+  <div class="col-sm-4">
+     <a href="{% url 'gallery' 1 %}" class="thumbnail" class="img-responsive center-block">        
+        <img src="{% static 'img/eqrelief.jpg' %}" style="width:400px;height:250px"><br>
+        <center><p>Earthquake Relief Camp</p></center>    
+      </a>
+    </div>
+    <div class="col-sm-4">
+     <a href="{% url 'gallery' 1 %}" class="thumbnail" class="img-responsive center-block">            
+        <img src="{% static 'img/deusi072.jpg' %}" style="width:400px;height:250px"><br>
+        <center><p>Deusi Bhailo</p></center>
+      </a>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
+
+ 

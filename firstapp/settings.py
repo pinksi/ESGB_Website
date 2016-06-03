@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 	'posts',
 	'blog',
     'crispy_forms',
+    'gallery.apps.GalleryConfig',
 ]
 
 MIDDLEWARE_CLASSES = [
